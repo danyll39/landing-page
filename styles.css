@@ -147,20 +147,30 @@
     animation-name: modalopen;
     animation-duration: var(--modal-duration);
   }
+  .message-modal {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    top: 30%;
+    left: 30%;
+    max-width: 100%;
+    position: fixed;
+    width: 450px;
+  }
   
-  .modal-header {
+  .modal-header, .message-header {
     background: var(--primary-color);
     color: #fff;
     padding: 15px;
   }
   
-  .modal-header h3 {
+  .modal-header h3 .message-header {
     margin: 0;
     border-bottom: 1px solid #333;
   }
   
   .modal-content {
-    padding: 20px;
+    text-align: center;
   }
   
   .modal-form div {
@@ -176,7 +186,43 @@
     padding: 8px;
     width: 100%;
   }
+  .message-modal {
   
+    bottom: 0px;
+  }
+  /* .services-box {
+  
+    border:1px solid black;
+    padding-bottom: 25px;
+    width: 400px;
+  } */
+  .services-box  {
+    height:200px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: #b1dd2e;;
+    padding: 10px;
+  }
+  .services-box  div {
+    background-color: rgba(255, 255, 255, 0.988);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .service-image {
+    margin-left: 25px;
+    height: 250px;
+    width:350px;
+  }
+  .service-writing {
+    text-align: center;
+  }
+  .contact-message {
+    text-align: center;
+    position: center;
+  }
+ 
   .close-btn {
     background: transparent;
     font-size: 25px;
